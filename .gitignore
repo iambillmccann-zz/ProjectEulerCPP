@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+ProjectEuler/.vs/ProjectEuler/v16/.suo
+*.db
+*.ipch
+*.ilk
+*.pdb
+*.log
+*.tlog
+*.idb
