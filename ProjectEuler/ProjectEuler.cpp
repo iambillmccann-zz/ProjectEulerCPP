@@ -5,9 +5,13 @@
 #include <string>
 #include <algorithm>
 
+#include "Problems.h"
+
 using namespace std;
+using namespace EulerLibrary::Problems;
+
 string kQuitString = "Q";
-const int kLastProblem = 0;
+const int kLastProblem = 1;
 
 int GetUserInput();
 
@@ -69,7 +73,7 @@ int GetUserInput()
 {
     string user_input;
 
-    cout << "What problem shall I run? Or type 'Q' to quit. ";
+    cout << "\nWhat problem shall I run? Or type 'Q' to quit. ";
     getline(cin, user_input);
     
     return CheckUserInput(user_input);
@@ -81,13 +85,21 @@ int GetUserInput()
 int main()
 {
     int problem_number = 0;
+    ProblemFactory* problem_factory = new ProblemFactory();
+    IEulerSolution* solution = NULL;
 
     //ToDo: instantiate a factory to instantiate the problem solution
     //ToDo: instantiate classes for the stop watch
 
     problem_number = GetUserInput();
     while (problem_number > 0) {
-        cout << "The problem number is " << problem_number;
+        cout << "\nThe problem number is " << problem_number;
+
+        solution = problem_factory -> GetSolution(problem_number);
+        cout << "\nSolution to problem " << problem_number << " = " << solution->Compute();
+        delete solution;
+
         problem_number = GetUserInput();
     }
+    delete problem_factory;
 }
