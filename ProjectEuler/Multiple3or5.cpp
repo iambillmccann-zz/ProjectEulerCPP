@@ -7,5 +7,5 @@ using namespace EulerLibrary::Problems;
 
 string Multiple3or5::Compute(void)
 {
-	return "Multiple of 3 or 5";
+	return "3.1415926";
 }

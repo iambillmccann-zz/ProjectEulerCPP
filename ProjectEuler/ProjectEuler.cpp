@@ -88,17 +88,17 @@ int main()
     ProblemFactory* problem_factory = new ProblemFactory();
     IEulerSolution* solution = NULL;
 
-    //ToDo: instantiate a factory to instantiate the problem solution
-    //ToDo: instantiate classes for the stop watch
-
     problem_number = GetUserInput();
     while (problem_number > 0) {
-        cout << "\nThe problem number is " << problem_number;
 
         solution = problem_factory -> GetSolution(problem_number);
-        cout << "\nSolution to problem " << problem_number << " = " << solution->Compute();
-        delete solution;
 
+        cout << "\n-----------------------------------------------------------------------";
+//      cout << "\nExecution time was " << Utilities.FormatMilliseconds(totalTime.ElapsedMilliseconds));
+        cout << "\nSolution to problem " << problem_number << " = " << solution->Compute();
+        cout << "\n-----------------------------------------------------------------------";
+
+        delete solution;
         problem_number = GetUserInput();
     }
     delete problem_factory;
