@@ -4,11 +4,15 @@
 #include <iostream>
 #include <string>
 #include <algorithm>
+#include <chrono>
 
 #include "Problems.h"
+#include "Utilities.h"
 
 using namespace std;
 using namespace EulerLibrary::Problems;
+using namespace EulerLibrary;
+using namespace std::chrono;
 
 string kQuitString = "Q";
 const int kLastProblem = 1;
@@ -85,6 +89,7 @@ int GetUserInput()
 int main()
 {
     int problem_number = 0;
+    Utilities* utilities = new Utilities();
     ProblemFactory* problem_factory = new ProblemFactory();
     IEulerSolution* solution = NULL;
 
@@ -92,10 +97,14 @@ int main()
     while (problem_number > 0) {
 
         solution = problem_factory -> GetSolution(problem_number);
+        high_resolution_clock::time_point start_time = high_resolution_clock::now();
+        string result = solution->Compute();
+        high_resolution_clock::time_point stop_time = high_resolution_clock::now();
+        duration<double, std::milli> total_time = stop_time - start_time;
 
         cout << "\n-----------------------------------------------------------------------";
-//      cout << "\nExecution time was " << Utilities.FormatMilliseconds(totalTime.ElapsedMilliseconds));
-        cout << "\nSolution to problem " << problem_number << " = " << solution->Compute();
+        cout << "\nExecution time was " << utilities -> FormatMilliseconds(total_time.count());
+        cout << "\nSolution to problem " << problem_number << " = " << result;
         cout << "\n-----------------------------------------------------------------------";
 
         delete solution;

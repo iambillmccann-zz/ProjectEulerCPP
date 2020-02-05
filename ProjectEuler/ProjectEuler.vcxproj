@@ -156,9 +156,11 @@
     <ClCompile Include="Multiple3or5.cpp" />
     <ClCompile Include="ProblemFactory.cpp" />
     <ClCompile Include="ProjectEuler.cpp" />
+    <ClCompile Include="Utilities.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Problems.h" />
+    <ClInclude Include="Utilities.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
