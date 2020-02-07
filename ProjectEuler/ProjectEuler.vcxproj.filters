@@ -13,10 +13,42 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\EulerLibrary">
+      <UniqueIdentifier>{d2c66754-cace-49aa-8d08-02c4a8a6a481}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\EulerLibrary\Problems">
+      <UniqueIdentifier>{bee7dff7-cc2a-4015-a402-2e6d56f6ae82}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ProjectEuler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="IEulerSolution.cpp">
+      <Filter>Source Files\EulerLibrary\Problems</Filter>
+    </ClCompile>
+    <ClCompile Include="ProblemFactory.cpp">
+      <Filter>Source Files\EulerLibrary\Problems</Filter>
+    </ClCompile>
+    <ClCompile Include="GenericSolution.cpp">
+      <Filter>Source Files\EulerLibrary\Problems</Filter>
+    </ClCompile>
+    <ClCompile Include="Multiple3or5.cpp">
+      <Filter>Source Files\EulerLibrary\Problems</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities.cpp">
+      <Filter>Source Files\EulerLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="MathLibrary.cpp">
+      <Filter>Source Files\EulerLibrary</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Problems.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
