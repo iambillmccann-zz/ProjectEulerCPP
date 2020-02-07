@@ -33,6 +33,10 @@ namespace EulerLibrary
 		//    return the answer to the problem of Multiples of 3 or 5.
 		class Multiple3or5 : public IEulerSolution
 		{
+		private:
+			long NumberOfTerms(long rangeStart, long rangeStop, long difference);
+			long LastTerm(long numberOfTerms, long firstTerm, long difference);
+
 		public:
 			string Compute(void);
 		};

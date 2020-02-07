@@ -5,6 +5,11 @@ using namespace std;
 
 namespace EulerLibrary
 {
+	class MathLibrary
+	{
+	public:
+		long ArithemticSeries(long numberOfTerms, long firstTerm, long lastTerm);
+	};
 
 	class Utilities
 	{

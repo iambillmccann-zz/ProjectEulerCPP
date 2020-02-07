@@ -39,6 +39,9 @@
     <ClCompile Include="Utilities.cpp">
       <Filter>Source Files\EulerLibrary</Filter>
     </ClCompile>
+    <ClCompile Include="MathLibrary.cpp">
+      <Filter>Source Files\EulerLibrary</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Problems.h">
