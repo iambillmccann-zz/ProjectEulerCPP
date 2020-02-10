@@ -151,6 +151,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="EvenFibonacci.cpp" />
     <ClCompile Include="GenericSolution.cpp" />
     <ClCompile Include="IEulerSolution.cpp" />
     <ClCompile Include="MathLibrary.cpp" />

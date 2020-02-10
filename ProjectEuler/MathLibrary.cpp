@@ -21,3 +21,20 @@ long MathLibrary::ArithemticSeries(long numberOfTerms, long firstTerm, long last
 {
 	return numberOfTerms * (firstTerm + lastTerm) / 2;
 }
+
+//
+// IsMultiple checks that a number is an even multiple of another
+//
+// Args:
+//  value            The value to check
+//  divisor          The number to divide into the value
+//
+// Returns:
+//   True is the numbers divide evenly, otherwise false
+//
+bool MathLibrary::IsMultiple(long value, long divisor)
+{
+	if (divisor == 0) return false;
+	if (value % divisor == 0) return true;
+	return false;
+}

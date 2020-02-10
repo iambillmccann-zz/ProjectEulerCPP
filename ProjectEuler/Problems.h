@@ -41,6 +41,12 @@ namespace EulerLibrary
 			string Compute(void);
 		};
 
+		class EvenFibonacci : public IEulerSolution
+		{
+		public:
+			string Compute(void);
+		};
+
 		//
 		// The ProblemFactory class using the factory pattern to return the solution to a 
 		// given problem number.

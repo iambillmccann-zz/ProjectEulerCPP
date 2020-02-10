@@ -9,7 +9,8 @@ IEulerSolution* ProblemFactory::GetSolution(int problem_number)
 {
 	switch (problem_number)
 	{
-	case 1: return new Multiple3or5();
-	default : return new GenericSolution();
+		case 1: return new Multiple3or5();
+		case 2: return new EvenFibonacci();
+		default : return new GenericSolution();
 	}
 }

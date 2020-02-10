@@ -42,6 +42,9 @@
     <ClCompile Include="MathLibrary.cpp">
       <Filter>Source Files\EulerLibrary</Filter>
     </ClCompile>
+    <ClCompile Include="EvenFibonacci.cpp">
+      <Filter>Source Files\EulerLibrary\Problems</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Problems.h">

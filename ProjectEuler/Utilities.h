@@ -9,6 +9,7 @@ namespace EulerLibrary
 	{
 	public:
 		long ArithemticSeries(long numberOfTerms, long firstTerm, long lastTerm);
+		bool IsMultiple(long value, long divisor);
 	};
 
 	class Utilities
