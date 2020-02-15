@@ -154,6 +154,7 @@
     <ClCompile Include="EvenFibonacci.cpp" />
     <ClCompile Include="GenericSolution.cpp" />
     <ClCompile Include="IEulerSolution.cpp" />
+    <ClCompile Include="LargestPrimeFactor.cpp" />
     <ClCompile Include="MathLibrary.cpp" />
     <ClCompile Include="Multiple3or5.cpp" />
     <ClCompile Include="ProblemFactory.cpp" />
