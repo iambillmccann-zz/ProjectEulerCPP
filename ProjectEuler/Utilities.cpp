@@ -1,8 +1,12 @@
+#pragma warning( disable : 4244 )
+
 #include <string>
 #include <math.h>
 
 #include "Problems.h"
 #include "Utilities.h"
+#include <vector>
+#include <algorithm>
 
 using namespace std;
 using namespace EulerLibrary;
@@ -19,9 +23,9 @@ using namespace EulerLibrary;
 //
 string Utilities::FormatMilliseconds(double totalMilliseconds)
 {
-	long milliseconds = (long)floor(totalMilliseconds);
+	long milliseconds = floor((long)totalMilliseconds % 1000);
 
-    long totalseconds = milliseconds / 1000;
+    long totalseconds = totalMilliseconds / 1000;
     long seconds = totalseconds % 60;
     long totalminutes = totalseconds / 60;
     long minutes = totalminutes % 60;
