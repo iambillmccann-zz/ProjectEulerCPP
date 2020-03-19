@@ -15,7 +15,7 @@ using namespace EulerLibrary;
 using namespace std::chrono;
 
 string kQuitString = "Q";
-const int kLastProblem = 3;
+const int kLastProblem = 4;
 
 int GetUserInput();
 

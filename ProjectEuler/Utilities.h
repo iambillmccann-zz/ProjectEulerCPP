@@ -14,6 +14,7 @@ namespace EulerLibrary
 		list<long long> GetFactors(long long number);
 		list<long long> GetFactors(long long number, list<long long> primeNumbers, list<long long> factors);
 		bool IsMultiple(long long value, long long divisor);
+		long long ReverseDigits(long long number);
 	};
 
 	class Utilities

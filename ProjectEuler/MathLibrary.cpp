@@ -106,3 +106,26 @@ bool MathLibrary::IsMultiple(long long value, long long divisor)
 	if (value % divisor == 0) return true;
 	return false;
 }
+
+//
+// Reverse the order of digits in an integer such that 1234 becomes 4321
+//
+// Args:
+//  number          The number to reverse
+//
+// Returns:
+//  The number with digits reversed
+long long MathLibrary::ReverseDigits(long long number)
+{
+    long long result = 0;
+    long long workNumber = number;
+
+    while (workNumber > 0)
+    {
+        long remainder = workNumber % 10;
+        result = (result * 10) + remainder;
+        workNumber /= 10;
+    }
+
+    return result;
+}
