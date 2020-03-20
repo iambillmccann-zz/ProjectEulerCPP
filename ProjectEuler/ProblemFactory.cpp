@@ -13,6 +13,7 @@ IEulerSolution* ProblemFactory::GetSolution(int problem_number)
 		case 2: return new EvenFibonacci();
 		case 3: return new LargestPrimeFactor();
 		case 4: return new LargestPalindromeProduct();
+		case 5: return new SmallestMultiple();
 		default : return new GenericSolution();
 	}
 }
