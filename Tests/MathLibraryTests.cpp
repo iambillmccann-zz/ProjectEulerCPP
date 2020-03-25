@@ -11,14 +11,14 @@ using namespace std;
 namespace Tests
 {
 
+    MathLibrary* mathLibrary = new MathLibrary();
+
     TEST_CLASS(MathLibraryTests)
     {
-
 
     public:
         TEST_METHOD(ReverseEvenNumberOfDigits)
         {
-            MathLibrary* mathLibrary = new MathLibrary();
             long long expected = 4321;
             long long actual = mathLibrary->ReverseDigits(1234);
             Assert::AreEqual(expected, actual);
@@ -26,7 +26,6 @@ namespace Tests
 
         TEST_METHOD(ReverseOddNumberOfDigits)
         {
-            MathLibrary* mathLibrary = new MathLibrary();
             long long expected = 987654321;
             long long actual = mathLibrary->ReverseDigits(123456789);
             Assert::AreEqual(expected, actual);
@@ -34,7 +33,6 @@ namespace Tests
 
         TEST_METHOD(PassIsMultiple)
         {
-            MathLibrary* mathLibrary = new MathLibrary();
             Assert::AreEqual(true, mathLibrary->IsMultiple(4, 2));
             Assert::AreEqual(true, mathLibrary->IsMultiple(9, 3));
             Assert::AreEqual(true, mathLibrary->IsMultiple(12, 6));
@@ -45,7 +43,6 @@ namespace Tests
 
         TEST_METHOD(FailIsMultiple)
         {
-            MathLibrary* mathLibrary = new MathLibrary();
             Assert::AreEqual(false, mathLibrary->IsMultiple(4, 3));
             Assert::AreEqual(false, mathLibrary->IsMultiple(1, 0));
             Assert::AreEqual(false, mathLibrary->IsMultiple(13, 3));
@@ -56,7 +53,6 @@ namespace Tests
 
         TEST_METHOD(ComputeSquare)
         {
-            MathLibrary* mathLibrary = new MathLibrary();
             Assert::AreEqual((long long)25, mathLibrary->Square(5));
             Assert::AreEqual((long long)0, mathLibrary->Square(0));
             Assert::AreEqual((long long)1, mathLibrary->Square(-1));
@@ -64,7 +60,6 @@ namespace Tests
 
         TEST_METHOD(ComputeNaturalSum)
         {
-            MathLibrary* mathLibrary = new MathLibrary();
             Assert::AreEqual((long long)55, mathLibrary->SumNatural(10));
             Assert::AreEqual((long long)0, mathLibrary->SumNatural(0));
             Assert::AreEqual((long long)0, mathLibrary->SumNatural(-10));
@@ -72,7 +67,6 @@ namespace Tests
 
         TEST_METHOD(ComputeSumSquares)
         {
-            MathLibrary* mathLibrary = new MathLibrary();
             Assert::AreEqual((long long)385, mathLibrary->SumNaturalSquares(10));
             Assert::AreEqual((long long)0, mathLibrary->SumNaturalSquares(0));
             Assert::AreEqual((long long)0, mathLibrary->SumNaturalSquares(-10));
