@@ -129,3 +129,40 @@ long long MathLibrary::ReverseDigits(long long number)
 
     return result;
 }
+
+long long MathLibrary::Square(long long number)
+{
+    return number * number;
+}
+
+//
+// Compute the sum of natural numbers (positive integers starting at 1)
+//
+// Args:
+//   number      The last number of the sequence to sum
+//
+// Returns:
+//   The sum of the natural numbers up to and including number
+//
+long long MathLibrary::SumNatural(long long number)
+{
+    long long result = 0;
+    for (long long sequence = 1; sequence <= number; sequence++) { result += sequence; }
+    return result;
+}
+
+//
+// Compute the sum of squares of natural numbers
+//
+// Args:
+//   number       The last number of the sequence to sum
+//
+// Returns:
+//   The sum of the squares of the natural numbers up to and including number
+//
+long long MathLibrary::SumNaturalSquares(long long number)
+{
+    long long result = 0;
+    for (long long sequence = 1; sequence <= number; sequence++) result += Square(sequence);
+    return result;
+}

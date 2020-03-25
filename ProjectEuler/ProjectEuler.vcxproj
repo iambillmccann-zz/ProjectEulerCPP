@@ -161,6 +161,7 @@
     <ClCompile Include="ProblemFactory.cpp" />
     <ClCompile Include="ProjectEuler.cpp" />
     <ClCompile Include="SmallestMultiple.cpp" />
+    <ClCompile Include="SumSquareDifference.cpp" />
     <ClCompile Include="Utilities.cpp" />
   </ItemGroup>
   <ItemGroup>

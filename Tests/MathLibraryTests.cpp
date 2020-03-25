@@ -13,8 +13,9 @@ namespace Tests
 
     TEST_CLASS(MathLibraryTests)
     {
-    public:
 
+
+    public:
         TEST_METHOD(ReverseEvenNumberOfDigits)
         {
             MathLibrary* mathLibrary = new MathLibrary();
@@ -51,6 +52,30 @@ namespace Tests
             Assert::AreEqual(false, mathLibrary->IsMultiple(19, 18));
             Assert::AreEqual(false, mathLibrary->IsMultiple(23, 2));
             Assert::AreEqual(false, mathLibrary->IsMultiple(37, 66));
+        }
+
+        TEST_METHOD(ComputeSquare)
+        {
+            MathLibrary* mathLibrary = new MathLibrary();
+            Assert::AreEqual((long long)25, mathLibrary->Square(5));
+            Assert::AreEqual((long long)0, mathLibrary->Square(0));
+            Assert::AreEqual((long long)1, mathLibrary->Square(-1));
+        }
+
+        TEST_METHOD(ComputeNaturalSum)
+        {
+            MathLibrary* mathLibrary = new MathLibrary();
+            Assert::AreEqual((long long)55, mathLibrary->SumNatural(10));
+            Assert::AreEqual((long long)0, mathLibrary->SumNatural(0));
+            Assert::AreEqual((long long)0, mathLibrary->SumNatural(-10));
+        }
+
+        TEST_METHOD(ComputeSumSquares)
+        {
+            MathLibrary* mathLibrary = new MathLibrary();
+            Assert::AreEqual((long long)385, mathLibrary->SumNaturalSquares(10));
+            Assert::AreEqual((long long)0, mathLibrary->SumNaturalSquares(0));
+            Assert::AreEqual((long long)0, mathLibrary->SumNaturalSquares(-10));
         }
     };
 

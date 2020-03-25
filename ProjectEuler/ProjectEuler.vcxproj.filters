@@ -54,6 +54,9 @@
     <ClCompile Include="SmallestMultiple.cpp">
       <Filter>Source Files\EulerLibrary\Problems</Filter>
     </ClCompile>
+    <ClCompile Include="SumSquareDifference.cpp">
+      <Filter>Source Files\EulerLibrary\Problems</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Problems.h">

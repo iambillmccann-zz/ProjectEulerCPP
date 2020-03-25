@@ -14,6 +14,7 @@ IEulerSolution* ProblemFactory::GetSolution(int problem_number)
 		case 3: return new LargestPrimeFactor();
 		case 4: return new LargestPalindromeProduct();
 		case 5: return new SmallestMultiple();
+		case 6: return new SumSquareDifference();
 		default : return new GenericSolution();
 	}
 }
