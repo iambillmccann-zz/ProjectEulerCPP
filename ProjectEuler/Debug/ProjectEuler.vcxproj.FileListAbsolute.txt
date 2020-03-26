@@ -1,0 +1,2 @@
+E:\Bill\Documents\GitHubProjects\ProjectEulerCPP\ProjectEuler\Debug\ProjectEuler.exe
+E:\Bill\Documents\GitHubProjects\ProjectEulerCPP\ProjectEuler\Debug\ProjectEuler.pdb

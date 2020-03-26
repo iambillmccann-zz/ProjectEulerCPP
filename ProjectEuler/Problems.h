@@ -34,9 +34,39 @@ namespace EulerLibrary
 		class Multiple3or5 : public IEulerSolution
 		{
 		private:
-			long NumberOfTerms(long rangeStart, long rangeStop, long difference);
-			long LastTerm(long numberOfTerms, long firstTerm, long difference);
+			long long NumberOfTerms(long long rangeStart, long long rangeStop, long long difference);
+			long long LastTerm(long long numberOfTerms, long long firstTerm, long long difference);
 
+		public:
+			string Compute(void);
+		};
+
+		class EvenFibonacci : public IEulerSolution
+		{
+		public:
+			string Compute(void);
+		};
+
+		class LargestPrimeFactor : public IEulerSolution
+		{
+		public:
+			string Compute(void);
+		};
+
+		class LargestPalindromeProduct : public IEulerSolution
+		{
+		public:
+			string Compute(void);
+		};
+
+		class SmallestMultiple : public IEulerSolution
+		{
+		public:
+			string Compute(void);
+		};
+
+		class SumSquareDifference : public IEulerSolution
+		{
 		public:
 			string Compute(void);
 		};

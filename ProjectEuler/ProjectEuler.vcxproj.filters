@@ -42,6 +42,21 @@
     <ClCompile Include="MathLibrary.cpp">
       <Filter>Source Files\EulerLibrary</Filter>
     </ClCompile>
+    <ClCompile Include="EvenFibonacci.cpp">
+      <Filter>Source Files\EulerLibrary\Problems</Filter>
+    </ClCompile>
+    <ClCompile Include="LargestPrimeFactor.cpp">
+      <Filter>Source Files\EulerLibrary\Problems</Filter>
+    </ClCompile>
+    <ClCompile Include="LargestPalindromeProduct.cpp">
+      <Filter>Source Files\EulerLibrary\Problems</Filter>
+    </ClCompile>
+    <ClCompile Include="SmallestMultiple.cpp">
+      <Filter>Source Files\EulerLibrary\Problems</Filter>
+    </ClCompile>
+    <ClCompile Include="SumSquareDifference.cpp">
+      <Filter>Source Files\EulerLibrary\Problems</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Problems.h">
