@@ -166,3 +166,35 @@ long long MathLibrary::SumNaturalSquares(long long number)
     for (long long sequence = 1; sequence <= number; sequence++) result += Square(sequence);
     return result;
 }
+
+//
+// Compute the total product of a list
+//
+// Args:
+//   numbers       A list of integers
+//
+// Returns:
+//   The product of the numbers in the list as a * b * c * d * ...
+//
+long long MathLibrary::SeriesProduct(list<long long> numbers)
+{
+    long long result = 1;
+    for (long long number : numbers) result *= number;
+    return result;
+}
+
+//
+// Compute the summation of a list
+//
+// Args:
+//   numbers        A list of integers
+//
+// Returns:
+//  The sum of the numbers in the list as a + b + c + d + ...
+//
+long long MathLibrary::SeriesSum(list<long long> numbers)
+{
+    long long result = 0;
+    for (long long number : numbers) result += number;
+    return result;
+}

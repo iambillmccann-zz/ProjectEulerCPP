@@ -71,6 +71,37 @@ namespace Tests
             Assert::AreEqual((long long)0, mathLibrary->SumNaturalSquares(0));
             Assert::AreEqual((long long)0, mathLibrary->SumNaturalSquares(-10));
         }
+        
+        TEST_METHOD(ComputeGetPrime)
+        {
+            list<long long> expected = { 2, 3, 5, 7, 11, 13, 17, 19 };
+            list<long long> actual = mathLibrary->GetPrime(20);
+            Assert::IsTrue(expected == actual);
+
+            actual = mathLibrary->GetPrime(23);
+            Assert::IsTrue(9 == actual.size());
+
+            Assert::AreEqual((long long)7919, mathLibrary->GetPrime(7920).back());
+        }
+        
+        TEST_METHOD(ComputeSeriesProduct)
+        {
+            list<long long> numbers = { 2, 3, 4, 5 };
+            Assert::AreEqual((long long)120, mathLibrary->SeriesProduct(numbers));
+
+            numbers = { 0, 999, 33, 10, -1 };
+            Assert::AreEqual((long long)0, mathLibrary->SeriesProduct(numbers));
+
+            numbers = { 9, 9, 8, 9 };
+            Assert::AreEqual((long long)5832, mathLibrary->SeriesProduct(numbers));
+        }
+        
+        TEST_METHOD(ComputeSeriesSum)
+        {
+            list<long long> numbers = { 2, 3, 5, 7 };
+            Assert::AreEqual((long long)17, mathLibrary->SeriesSum(numbers));
+        }
+        
     };
 
 }

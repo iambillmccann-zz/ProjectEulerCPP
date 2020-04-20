@@ -18,6 +18,8 @@ namespace EulerLibrary
 		long long Square(long long number);
 		long long SumNatural(long long number);
 		long long SumNaturalSquares(long long number);
+		long long SeriesProduct(list<long long> numbers);
+		long long SeriesSum(list<long long> numbers);
 	};
 
 	class Utilities
