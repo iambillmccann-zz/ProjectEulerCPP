@@ -158,6 +158,7 @@
     <ClCompile Include="LargestPrimeFactor.cpp" />
     <ClCompile Include="MathLibrary.cpp" />
     <ClCompile Include="Multiple3or5.cpp" />
+    <ClCompile Include="Prime10001.cpp" />
     <ClCompile Include="ProblemFactory.cpp" />
     <ClCompile Include="ProjectEuler.cpp" />
     <ClCompile Include="SmallestMultiple.cpp" />
