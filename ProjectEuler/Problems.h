@@ -82,6 +82,16 @@ namespace EulerLibrary
 			string Compute(void);
 		};
 
+		class PythagoreanTriplet : public IEulerSolution
+		{
+			string Compute(void);
+		};
+
+		class SummationPrimes : public IEulerSolution
+		{
+			string Compute(void);
+		};
+
 		//
 		// The ProblemFactory class using the factory pattern to return the solution to a 
 		// given problem number.
