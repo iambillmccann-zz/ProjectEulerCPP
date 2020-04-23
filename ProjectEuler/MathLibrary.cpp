@@ -34,15 +34,20 @@ long long MathLibrary::ArithemticSeries(long long numberOfTerms, long long first
 //   The list of prime numbers
 list<long long> EulerLibrary::MathLibrary::GetPrime(long long max)
 {
-    list<long long> primeNumbers;
+    list<long long> primeNumbers = { 2 };
 
-    for (long long number = 2; number <= max; number++)
+    for (long long number = 3; number <= max; number += 2)
     {
         bool isPrime = true;
+        long long limit = (long long)sqrt((double)number);
         for(auto iterator = primeNumbers.begin(); iterator != primeNumbers.end(); ++iterator) {
             long long divisor = *iterator;
-            if (divisor * divisor > number) break;
-            if (IsMultiple(number, divisor)) isPrime = false;
+            if (divisor == 2) continue;
+            if (limit < divisor) break;
+            if (IsMultiple(number, divisor)) {
+                isPrime = false;
+                break;
+            };
         };
         if (isPrime) primeNumbers.push_back(number);
     }

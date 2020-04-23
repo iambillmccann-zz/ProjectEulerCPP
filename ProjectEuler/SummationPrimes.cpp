@@ -15,5 +15,5 @@ string SummationPrimes::Compute(void)
 {
     MathLibrary* mathLibrary = new MathLibrary();
     list<long long> primeNumbers = mathLibrary->GetPrime(2000000);
-    return to_string( mathLibrary->SeriesProduct(primeNumbers) );
+    return to_string( mathLibrary->SeriesSum(primeNumbers) );
 }
