@@ -63,6 +63,12 @@
     <ClCompile Include="LargestProductSeries.cpp">
       <Filter>Source Files\EulerLibrary\Problems</Filter>
     </ClCompile>
+    <ClCompile Include="PythagoreanTriplet.cpp">
+      <Filter>Source Files\EulerLibrary\Problems</Filter>
+    </ClCompile>
+    <ClCompile Include="SummationPrimes.cpp">
+      <Filter>Source Files\EulerLibrary\Problems</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Problems.h">
