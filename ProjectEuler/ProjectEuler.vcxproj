@@ -156,6 +156,7 @@
     <ClCompile Include="IEulerSolution.cpp" />
     <ClCompile Include="LargestPalindromeProduct.cpp" />
     <ClCompile Include="LargestPrimeFactor.cpp" />
+    <ClCompile Include="LargestProductGrid.cpp" />
     <ClCompile Include="LargestProductSeries.cpp" />
     <ClCompile Include="MathLibrary.cpp" />
     <ClCompile Include="Multiple3or5.cpp" />

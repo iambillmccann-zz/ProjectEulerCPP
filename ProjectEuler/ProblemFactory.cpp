@@ -19,6 +19,7 @@ IEulerSolution* ProblemFactory::GetSolution(int problem_number)
 		case 8: return new LargestProductSeries();
 		case 9: return new PythagoreanTriplet();
 		case 10: return new SummationPrimes();
+		case 11: return new LargestProductGrid();
 		default : return new GenericSolution();
 	}
 }
