@@ -69,6 +69,9 @@
     <ClCompile Include="SummationPrimes.cpp">
       <Filter>Source Files\EulerLibrary\Problems</Filter>
     </ClCompile>
+    <ClCompile Include="LargestProductGrid.cpp">
+      <Filter>Source Files\EulerLibrary\Problems</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Problems.h">
