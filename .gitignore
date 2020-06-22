@@ -31,10 +31,11 @@
 *.out
 *.app
 ProjectEuler/.vs/ProjectEuler/v16/.suo
-*.db
+*.db*
 *.ipch
 *.ilk
 *.pdb
 *.log
 *.tlog
 *.idb
+*.opendb
