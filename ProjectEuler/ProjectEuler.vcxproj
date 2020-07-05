@@ -153,6 +153,7 @@
   <ItemGroup>
     <ClCompile Include="EvenFibonacci.cpp" />
     <ClCompile Include="GenericSolution.cpp" />
+    <ClCompile Include="HighlyDivisibleTriangle.cpp" />
     <ClCompile Include="IEulerSolution.cpp" />
     <ClCompile Include="LargestPalindromeProduct.cpp" />
     <ClCompile Include="LargestPrimeFactor.cpp" />
