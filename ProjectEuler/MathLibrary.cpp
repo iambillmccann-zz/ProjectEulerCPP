@@ -24,6 +24,23 @@ long long MathLibrary::ArithemticSeries(long long numberOfTerms, long long first
 	return numberOfTerms * (firstTerm + lastTerm) / 2;
 }
 
+list<long long> MathLibrary::GetDivisors(long long number)
+{
+    list<long long> divisors = { };
+
+    for (long long divisor = 1; divisor <= (long long)sqrt((double)number); divisor++)
+    {
+        if (IsMultiple(number, divisor))
+        {
+            divisors.push_back(divisor);
+            long long quotient = number / divisor;
+            if (divisor != quotient && number != divisor) divisors.push_back(quotient);
+        }
+    }
+
+    return divisors;
+}
+
 //
 // GetPrime returns a list of prime number up to a given value
 //
