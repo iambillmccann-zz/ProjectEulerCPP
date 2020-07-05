@@ -72,6 +72,9 @@
     <ClCompile Include="LargestProductGrid.cpp">
       <Filter>Source Files\EulerLibrary\Problems</Filter>
     </ClCompile>
+    <ClCompile Include="HighlyDivisibleTriangle.cpp">
+      <Filter>Source Files\EulerLibrary\Problems</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Problems.h">

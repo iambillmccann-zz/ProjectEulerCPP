@@ -10,6 +10,7 @@ namespace EulerLibrary
 	{
 	public:
 		long long ArithemticSeries(long long numberOfTerms, long long firstTerm, long long lastTerm);
+		list<long long> GetDivisors(long long number);
 		list<long long> GetPrime(long long max);
 		list<long long> GetFactors(long long number);
 		list<long long> GetFactors(long long number, list<long long> primeNumbers, list<long long> factors);

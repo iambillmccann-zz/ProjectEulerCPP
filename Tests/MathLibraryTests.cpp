@@ -102,6 +102,25 @@ namespace Tests
             Assert::AreEqual((long long)17, mathLibrary->SeriesSum(numbers));
         }
         
-    };
+        TEST_METHOD(ComputeGetDivisors)
+        {
+            list<long long> actual = mathLibrary->GetDivisors(1);
+            Assert::IsTrue(actual.size() == 1);
+            Assert::IsTrue(std::find(actual.begin(), actual.end(), 1) != actual.end());
 
+            actual = mathLibrary->GetDivisors(3);
+            Assert::IsTrue(actual.size() == 2);
+            Assert::IsTrue(std::find(actual.begin(), actual.end(), 1) != actual.end());
+            Assert::IsTrue(std::find(actual.begin(), actual.end(), 3) != actual.end());
+
+            actual = mathLibrary->GetDivisors(28);
+            Assert::IsTrue(actual.size() == 6);
+            Assert::IsTrue(std::find(actual.begin(), actual.end(), 1) != actual.end());
+            Assert::IsTrue(std::find(actual.begin(), actual.end(), 2) != actual.end());
+            Assert::IsTrue(std::find(actual.begin(), actual.end(), 4) != actual.end());
+            Assert::IsTrue(std::find(actual.begin(), actual.end(), 7) != actual.end());
+            Assert::IsTrue(std::find(actual.begin(), actual.end(), 14) != actual.end());
+            Assert::IsTrue(std::find(actual.begin(), actual.end(), 28) != actual.end());
+        }
+    };
 }
