@@ -21,6 +21,7 @@ IEulerSolution* ProblemFactory::GetSolution(int problem_number)
 		case 10: return new SummationPrimes();
 		case 11: return new LargestProductGrid();
 		case 12: return new HighlyDivisibleTriangle();
+		case 13: return new LargestSum();
 		default : return new GenericSolution();
 	}
 }

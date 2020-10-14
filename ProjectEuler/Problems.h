@@ -102,6 +102,11 @@ namespace EulerLibrary
 			string Compute(void);
 		};
 
+		class LargestSum : public IEulerSolution
+		{
+			string Compute(void);
+		};
+
 		//
 		// The ProblemFactory class using the factory pattern to return the solution to a 
 		// given problem number.

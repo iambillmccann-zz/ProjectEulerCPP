@@ -159,6 +159,7 @@
     <ClCompile Include="LargestPrimeFactor.cpp" />
     <ClCompile Include="LargestProductGrid.cpp" />
     <ClCompile Include="LargestProductSeries.cpp" />
+    <ClCompile Include="LargestSum.cpp" />
     <ClCompile Include="MathLibrary.cpp" />
     <ClCompile Include="Multiple3or5.cpp" />
     <ClCompile Include="Prime10001.cpp" />
