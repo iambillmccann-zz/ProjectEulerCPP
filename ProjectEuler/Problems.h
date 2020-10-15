@@ -79,31 +79,41 @@ namespace EulerLibrary
 
 		class LargestProductSeries : public IEulerSolution
 		{
+		public:
 			string Compute(void);
 		};
 
 		class PythagoreanTriplet : public IEulerSolution
 		{
+		public:
 			string Compute(void);
 		};
 
 		class SummationPrimes : public IEulerSolution
 		{
+		public:
 			string Compute(void);
 		};
 
 		class LargestProductGrid : public IEulerSolution
 		{
+		public:
 			string Compute(void);
 		};
 
 		class HighlyDivisibleTriangle : public IEulerSolution
 		{
+		public:
 			string Compute(void);
 		};
 
 		class LargestSum : public IEulerSolution
 		{
+		private:
+			struct Digits;
+			Digits GetDigits(string);
+
+		public:
 			string Compute(void);
 		};
 
