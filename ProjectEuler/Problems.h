@@ -109,10 +109,6 @@ namespace EulerLibrary
 
 		class LargestSum : public IEulerSolution
 		{
-		private:
-			struct Digits;
-			Digits GetDigits(string);
-
 		public:
 			string Compute(void);
 		};
